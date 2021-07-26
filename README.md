@@ -1,3 +1,17 @@
+---
+page_type: sample
+languages:
+- javascript
+- typescript
+- nodejs
+name: "Azure Function GraphQL TypeScript CRUD operations"
+description: "A simple CRUD operations example using GraphQL TypeScript using Apollo server."
+products:
+- azure
+- azure-functions
+- vs-code
+---
+
 # GraphQL TypeScript CRUD operations
 
 A simple CRUD operations example using GraphQL TypeScript using Apollo server.

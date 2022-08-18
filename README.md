@@ -14,7 +14,11 @@ products:
 
 # GraphQL TypeScript CRUD operations
 
-A simple CRUD operations example using GraphQL TypeScript using Apollo server.
+A simple CRUD operations example using GraphQL TypeScript using Apollo server to an in-memory database.
+
+```
+const database = { [uuid()] :{"author": "dina", "content": "good morning"} };
+```
 
 ## Getting Started
 
@@ -189,3 +193,7 @@ curl 'http://localhost:7071/api/graphql' \
 
 1. In VS Code, create the Azure Function resource.
 2. Deploy the root folder to your resource. Do not select the `/dist` folder. It will be created as part of the build process.
+
+### MacOS M1 in a container
+
+* See azure-functions-core-tools issue [2834](https://github.com/Azure/azure-functions-core-tools/issues/2834)

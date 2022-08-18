@@ -1,5 +1,5 @@
 import { ApolloServer, gql} from "apollo-server-azure-functions";
-import { uuid } from 'uuidv4';
+import { v4 as uuid } from 'uuid';
 
 const database = { [uuid()] :{"author": "dina", "content": "good morning"} };
 

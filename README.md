@@ -203,3 +203,9 @@ curl 'http://localhost:7071/api/graphql' \
 ### MacOS M1 in a container
 
 * See azure-functions-core-tools issue [2834](https://github.com/Azure/azure-functions-core-tools/issues/2834)
+
+## Build failures in this repo
+
+The build file for the GitHub action is an example and the variables related to anyone's specific deployment have been genericized on purpose. Because of this, the values currently in the build action are fake and cause the build to fail. 
+
+If you create your own deployment in the Azure portal, for your Function, in its **Deployment center**, these values will be correct and the *yml file will be added to your fork of this repo. 

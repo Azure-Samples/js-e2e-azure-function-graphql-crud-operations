@@ -194,6 +194,12 @@ curl 'http://localhost:7071/api/graphql' \
 1. In VS Code, create the Azure Function resource.
 2. Deploy the root folder to your resource. Do not select the `/dist` folder. It will be created as part of the build process.
 
+### Deploy with GitHub Action
+
+* Use the [GitHub Action](https://github.com/Azure-Samples/js-e2e-azure-function-graphql-hello/blob/main/.github/workflows/main_deploy_to_azure_function.yml) from the Hello World GraphQL function. Make sure to replace the variables names with your own values, such as: 
+  * 'YOUR-FUNCTION-NAME'
+  * 'AZUREAPPSERVICE_PUBLISHPROFILE_123456' - if you create your deployment from the Azure portal Functions' **Deployment Center**, this value is populated for you.
+
 ### MacOS M1 in a container
 
 * See azure-functions-core-tools issue [2834](https://github.com/Azure/azure-functions-core-tools/issues/2834)
